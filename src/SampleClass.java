@@ -25,7 +25,20 @@ public class SampleClass {
 		boolean t = true;  //intやbooleanなどはオブジェクト型じゃない。プリミティブ型。なので、１．４までは入らなかった。
 		
 		map.put(1, true);  //1.5は勝手に求めるようになった。１→new　Integer が自動的に渡される。　new boolean(false)が自動的に。
+		      //これがauto　boxingの機能！
 		
-	}      //これがauto　boxingの機能！
+		System.out.println(map.get(boo));
+		
+		Object c = String.class;
+		
+		if(c instanceof String){
+			System.out.println("String型の胃mスタンスです");
+		}
+		
+		if(c instanceof Class){
+			System.out.println("Class型のインスタンスです");
+		}
+		
+	}
 	
 }
