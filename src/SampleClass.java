@@ -32,7 +32,7 @@ public class SampleClass {
 		Object c = String.class;
 		
 		if(c instanceof String){
-			System.out.println("String型の胃mスタンスです");
+			System.out.println("String型のインスタンスです");
 		}
 		
 		if(c instanceof Class){
